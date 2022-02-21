@@ -35,3 +35,8 @@ console.log(ovejasNombreAN);
 //Nuevo Array con las ovejas rojas
 let ovejasRojas = ovejas.filter( element => element.color == 'rojo');
 console.log (ovejasRojas);
+
+//Aplicar el array de ovejas rojas, al array de ovejas nombre
+let ovejasRojasNombreAN;
+ovejasRojasNombreAN = ovejasNombreAN.filter( element => element.color == 'rojo');
+console.log(ovejasRojasNombreAN);
