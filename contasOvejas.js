@@ -31,3 +31,4 @@ for (i=0; i<ovejas.length; i++){
 }
 
 console.log(ovejasNombreAN);
+console.log (ovejasRojas);
