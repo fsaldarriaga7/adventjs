@@ -40,3 +40,18 @@ console.log (ovejasRojas);
 let ovejasRojasNombreAN;
 ovejasRojasNombreAN = ovejasNombreAN.filter( element => element.color == 'rojo');
 console.log(ovejasRojasNombreAN);
+
+function contarOvejas(ovejas) {
+    let ovejasNombreAN = new Array;
+    let i;
+    for (i=0; i<ovejas.length; i++){
+        if (ovejas[i].name.toLowerCase().includes('a')&&ovejas[i].name.toLowerCase().includes('n')) {
+            ovejasNombreAN.push(ovejas[i]);        
+        }
+    }
+    ovejasNombreAN = ovejasNombreAN.filter( element => element.color == 'rojo');
+    return ovejasNombreAN;
+}
+
+let fun1 = contarOvejas(ovejas);
+console.log(fun1);
