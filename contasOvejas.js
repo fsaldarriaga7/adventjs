@@ -11,6 +11,3 @@ const ovejas = [
 let ovejasRojas = ovejas.filter( element => element.color == 'rojo');
 
 console.log (ovejasRojas);
-
-
-
