@@ -31,4 +31,7 @@ for (i=0; i<ovejas.length; i++){
 }
 
 console.log(ovejasNombreAN);
+
+//Nuevo Array con las ovejas rojas
+let ovejasRojas = ovejas.filter( element => element.color == 'rojo');
 console.log (ovejasRojas);
