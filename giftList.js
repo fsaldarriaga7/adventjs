@@ -89,12 +89,28 @@ for (i=0;i<regalos.length;i++) {
 console.log(regalosSinDuplicados);
 
 
-
-
 //Paso 5 - Devolver el valor
 
+let cantidad;
+let arrayCantidadRegalos = new Array;
+
+for (i=0;i<regalosSinDuplicados.length;i++){
+    cantidad = 0;
+    for (let j=0;j<regalos.length;j++){
+        if (regalosSinDuplicados[i] == regalos[j]) {
+            cantidad++;
+        }
+    }
+    arrayCantidadRegalos[i] = cantidad;
+}
+
+console.log(arrayCantidadRegalos);
+
+//Paso 6 - Crear el Objeto final para entregar los resultados
 
 
-//Paso 6 - Crear la función
+
+
+//Paso 7 - Crear la función
 
 
