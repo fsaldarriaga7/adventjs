@@ -77,6 +77,11 @@ console.log(result);
 //Paso 6 - Creando la función
 
 export default function isValid(letter) {
+    let i = 0;
+    let pos1 = 0;
+    let pos2 = 0;
+    let final = 0;
+    result=true;
     if (letter.includes('[')||letter.includes(']')||letter.includes('{')||letter.includes('}')){
         result = false;
     }
@@ -130,6 +135,13 @@ export default function isValid(letter) {
 let a ="() bici";
 
 console.log(isValid(a));
+
+console.log(isValid("bici coche (balón) bici coche peluche"));
+console.log(isValid("(muñeca) consola bici"));
+console.log(isValid("(peluche {) bici"));
+console.log(isValid("bici coche (balón bici coche"));
+console.log(isValid("peluche (bici [coche) bici coche balón"));
+console.log(isValid("() bici"));
 
 /* "bici coche (balón) bici coche peluche" // -> ✅
 "(muñeca) consola bici" // ✅

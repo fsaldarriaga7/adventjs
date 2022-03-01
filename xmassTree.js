@@ -173,4 +173,4 @@ export default function createXmasTree(height) {
     return line;
 }
 
-console.log(createXmasTree(20))
+console.log(createXmasTree(50))
